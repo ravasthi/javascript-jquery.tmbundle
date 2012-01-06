@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>content</key>
+	<string>(function(\$) {
+    /*--------------------------------------------------------------------------
+    | $1
+    |
+    | A jQuery UI-based widget for xxx.
+    | Requirements: jquery-${TM_JQUERY_VERSION:1.4.2}, jquery-ui-${TM_JQUERY_UI_VERSION:1.8.4}.widget,…
+    --------------------------------------------------------------------------*/
+    \$.widget("ui.${1:${2:[widget_name]}widget}", {
+        // Set default options
+        ${3:options: {
+            ${4:optionName}: ${5:"optionValue"}${6:,}
+        \},}
+
+        _create: function() {
+            // Cache reference to options
+            var opts = this.options;
+
+            ${0:// Insert initialization code here}
+        },
+    });
+
+    \$(function() {
+        // Stuff to do as soon as the DOM is ready
+    });
+})(jQuery);
+</string>
+	<key>name</key>
+	<string>jQuery UI widget</string>
+	<key>scope</key>
+	<string>source.js, source.js.jquery</string>
+	<key>tabTrigger</key>
+	<string>uiw</string>
+	<key>uuid</key>
+	<string>ECA332AD-D39B-4AA5-97A1-4F62B80840A9</string>
+</dict>
+</plist>
